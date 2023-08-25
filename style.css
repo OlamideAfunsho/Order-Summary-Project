@@ -1,0 +1,128 @@
+*{
+     box-sizing: border-box;
+     margin:0;
+     padding:0;
+}
+
+body{
+     background-image: url("pattern-background-desktop.svg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     color:hsl(224, 23%, 55%);
+     background-color: hsl(225, 100%, 94%);
+     font-size: 16px;
+     font-family: "Red Hat Display";
+     font-weight: 500;
+}
+
+.container{
+     width:350px;
+     height:595px;
+     background-color: white;
+     position: absolute;
+     top:50%;
+     left:50%;
+     transform: translate(-50%,-50%);
+     text-align: center;
+     border-radius: 15px;
+}
+
+.hero-image{
+     width:350px;
+     height:auto;
+     border-top-left-radius: 15px;
+     border-top-right-radius: 15px;
+     margin-bottom:10px;
+}
+
+.header{
+     margin:20px;
+     color:hsl(223, 47%, 23%);
+     font-weight: 900;
+     
+}
+
+
+
+.btn-plan{
+     padding:10px;
+     margin:30px;
+     background-color: hsl(225, 100%, 98%);
+     border-radius: 10px;
+}
+.music-icon{
+     display:inline-block;
+     vertical-align:middle;
+     margin-right:15px;
+     width:35px;
+     height:35px;
+}
+.plan{
+     color:hsl(223, 47%, 23%);
+     margin-bottom: 15px;
+     font-weight: 700;
+}
+.plan-text{
+     display:inline-block;
+     vertical-align:middle;
+}
+.plan-link{
+     display:inline-block;
+     vertical-align:middle;
+     margin-left: 50px;
+}
+
+.btn{
+     padding:10px 68px;
+     display: inline-block;
+     text-decoration: none;
+     border-radius: 10px;
+     font-weight: 700;
+}
+.btn-full{
+     background-color: hsl(245, 75%, 52%);
+     box-shadow: 3px 10px 5px 8px hsl(240, 73%, 96%);
+     color:#ffffff;
+     margin-bottom:15px;
+}
+.btn-ghost{
+     color:hsl(224, 23%, 55%);
+}
+
+
+/* -------------STATES-------------- */
+.plan-link:hover{
+     opacity:0.7;
+}
+.btn-full:hover{
+     opacity:0.7;
+}
+.btn-ghost:hover{
+     color:hsl(223, 47%, 23%);
+}
+
+
+/* -----------RESPONSIVE------------ */
+@media screen and (max-width: 450px){
+     body{
+          background-image: url("pattern-background-mobile.svg");
+          background-size:150%;
+     }
+     .container{
+          width:340px;
+          height:550px;
+          position:absolute;
+          top:50%;
+          left:50%;
+          transform: translate(-50%,-50%);
+          display:inline-block;
+     }
+     .hero-image{
+          width:340px;
+     }
+     .btn{
+          display:inline-block;
+          padding: 10px 63px;
+     }
+     
+}
